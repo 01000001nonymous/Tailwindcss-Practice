@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <title>Bondi-tcss</title>
+  </head>
+  <body>
+    <header class="bg-darkClr p-4">
+      <nav class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="img">
+            <img src="../assets/imgs/logo.png" alt="logo" />
+          </div>
+          <button
+            class="text-white text-2xl py-1 px-2 border border-white rounded-lg cursor-pointer focus:border-greenClr md:hidden"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="felx space-x-6 text-white font-bold text-base capitalize cursor-pointer transition duration-300 hidden md:block"
+          >
+            <a href="#" class="text-greenClr! h-f-same active">home</a>
+            <a href="#" class="h-f-same">services</a>
+            <a href="#" class="h-f-same">portfolio</a>
+            <a href="#" class="h-f-same">about</a>
+            <a href="#" class="h-f-same">contact</a>
+            <span class="ps-4 border-l border-greenClr hidden lg:inline">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <button class="btn">Login</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="landing h-[calc(100vh-76px)] flex justify-center items-center bg-darkClr"
+    >
+      <div class="text-white text-center">
+        <h1 class="text-4xl font-bold">Taste the Creativity</h1>
+        <p class="mt-4 mb-10 text-textClr text-base">
+          We make awesome graphic and web design
+        </p>
+        <button class="btn">get started</button>
+      </div>
+    </div>
+    <script src="../assets/fontawesome/js/all.min.js"></script>
+  </body>
+</html>

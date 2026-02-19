@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-darkClr: #19283f;
+  --color-greenClr: #33d1cc;
+  --color-redClr: #ff3150;
+  --color-yellowClr: #ffc400;
+  --color-sectionClr: #eff7fa;
+  --color-textClr: #ffffff80;
+}
+
+@layer components {
+  .btn {
+    @apply rounded-full py-2 px-4 bg-redClr text-yellowClr capitalize font-bold hover:text-white;
+  }
+  .h-f-same {
+    @apply text-white;
+    @apply hover:text-greenClr;
+    @apply focus:text-greenClr;
+  }
+}
