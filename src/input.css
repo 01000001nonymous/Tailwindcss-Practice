@@ -6,7 +6,8 @@
   --color-redClr: #ff3150;
   --color-yellowClr: #ffc400;
   --color-sectionClr: #eff7fa;
-  --color-textClr: #ffffff80;
+  --color-textDarkClr: #ffffff80;
+  --color-textLightClr: #00000080;
 }
 
 @layer components {
@@ -17,5 +18,59 @@
     @apply text-white;
     @apply hover:text-greenClr;
     @apply focus:text-greenClr;
+  }
+  .card {
+    @apply my-12 text-center relative;
+  }
+  .img-card {
+    @apply inline mb-6;
+  }
+  .heading-card {
+    @apply mb-2 text-3xl font-bold capitalize;
+  }
+  .txt-card {
+    @apply mb-4 text-textLightClr uppercase;
+  }
+  .after-card {
+    @apply after:absolute after:w-30 after:h-0.5 after:bg-greenClr after:-bottom-5 after:left-[50%] after:transform-[translateX(-50%)] after:content-[''];
+  }
+  .one,
+  .two,
+  .three,
+  .pencil,
+  .tv,
+  .plug {
+    @apply absolute bottom-0 left-[50%] transform-[translate(-50%)];
+  }
+  .one,
+  .two,
+  .three {
+    @apply text-[192px] text-sectionClr;
+  }
+  .pencil,
+  .tv,
+  .plug {
+    @apply z-10 text-greenClr;
+  }
+  .h-red {
+    @apply hover:text-redClr;
+  }
+  .box {
+    @apply relative overflow-hidden mb-4 p-1.5 bg-white
+            before:content-[attr(data-work)]
+            before:absolute
+            before:w-[calc(100%-12px)]
+            before:h-[calc(100%-12px)]
+            before:-translate-x-[calc(100%+6px)]
+          before:bg-[#33d1cc85]
+          before:text-white
+            before:text-2xl
+            before:font-bold
+            before:flex
+            before:justify-center
+            before:items-center
+            before:transition
+            before:duration-500
+            hover:before:translate-x-0;
   }
 }

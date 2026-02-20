@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css" />
-    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Bondi-tcss</title>
   </head>
-  <body>
+  <body class="font-[roboto]">
     <header class="bg-darkClr p-4">
       <nav class="container mx-auto">
         <div class="flex items-center justify-between">
           <div class="img">
-            <img src="../assets/imgs/logo.png" alt="logo" />
+            <img src="/assets/imgs/logo.png" alt="logo" />
           </div>
           <button
             class="text-white text-2xl py-1 px-2 border border-white rounded-lg cursor-pointer focus:border-greenClr md:hidden"
@@ -40,10 +46,112 @@
     >
       <div class="text-white text-center">
         <h1 class="text-4xl font-bold">Taste the Creativity</h1>
-        <p class="mt-4 mb-10 text-textClr text-base">
+        <p class="mt-4 mb-10 text-textDarkClr text-base">
           We make awesome graphic and web design
         </p>
         <button class="btn">get started</button>
+      </div>
+    </div>
+    <div class="feature py-12">
+      <div class="container mx-auto">
+        <div class="card">
+          <img src="../assets/imgs/title.png" alt="title" class="img-card" />
+          <h1 class="heading-card">we are good at</h1>
+          <p class="txt-card">Some Of These Stuff Under</p>
+          <span class="after-card"></span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6">
+          <div class="feat text-center">
+            <div class="relative h-50">
+              <i class="fa-solid fa-1 one"></i>
+              <i class="fa-solid fa-pencil fa-4x pencil"></i>
+            </div>
+            <h4 class="text-yellowClr text-2xl font-bold my-6 uppercase">
+              graphic design
+            </h4>
+            <p class="text-textLightClr mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              pariatur reprehenderit repudiandae perferendis explicabo et
+              commodi illum.
+            </p>
+          </div>
+          <div class="feat text-center">
+            <div class="relative h-50">
+              <i class="fa-solid fa-2 two"></i>
+              <i class="fa-solid fa-tv fa-4x tv"></i>
+            </div>
+            <h4 class="text-yellowClr text-2xl font-bold my-6 uppercase">
+              coding
+            </h4>
+            <p class="text-textLightClr mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              pariatur reprehenderit repudiandae perferendis explicabo et
+              commodi illum.
+            </p>
+          </div>
+          <div class="feat text-center">
+            <div class="relative h-50">
+              <i class="fa-solid fa-3 three"></i>
+              <i class="fa-solid fa-plug fa-4x plug"></i>
+            </div>
+            <h4 class="text-yellowClr text-2xl font-bold my-6 uppercase">
+              graphic design
+            </h4>
+            <p class="text-textLightClr mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              pariatur reprehenderit repudiandae perferendis explicabo et
+              commodi illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="our-work py-12 bg-sectionClr">
+      <div class="container mx-auto">
+        <div class="card">
+          <img src="../assets/imgs/title.png" alt="title" class="img-card" />
+          <h1 class="heading-card">we are good at</h1>
+          <p class="txt-card">Some Of These Stuff Under</p>
+          <span class="after-card"></span>
+        </div>
+        <ul
+          class="flex items-center justify-center space-x-8 my-12 capitalize font-bold cursor-pointer"
+        >
+          <li class="active btn">all</li>
+          <li class="h-red">design</li>
+          <li class="h-red">code</li>
+          <li class="h-red">photo</li>
+          <li class="h-red">app</li>
+        </ul>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-01.jpg" alt="work" />
+          </div>
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-02.jpg" alt="work" />
+          </div>
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-03.jpg" alt="work" />
+          </div>
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-04.jpg" alt="work" />
+          </div>
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-05.jpg" alt="work" />
+          </div>
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-06.jpg" alt="work" />
+          </div>
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-07.jpg" alt="work" />
+          </div>
+          <div class="box" data-work="Application">
+            <img src="/assets/imgs/work-08.jpg" alt="work" />
+          </div>
+        </div>
+        <div class="flex justify-center mt-12">
+          <button class="btn">i want more</button>
+        </div>
       </div>
     </div>
     <script src="../assets/fontawesome/js/all.min.js"></script>
