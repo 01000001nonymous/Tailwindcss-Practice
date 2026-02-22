@@ -8,6 +8,10 @@
   --color-sectionClr: #eff7fa;
   --color-textDarkClr: #ffffff80;
   --color-textLightClr: #00000080;
+  --color-facebookClr: #1877f2;
+  --color-twitterClr: #1da1f2;
+  --color-linkedinClr: #0a66c2;
+  --color-youtubeClr: #ff0000;
 }
 
 @layer components {
@@ -72,5 +76,8 @@
             before:transition
             before:duration-500
             hover:before:translate-x-0;
+  }
+  .h-light {
+    @apply hover:text-white cursor-pointer;
   }
 }
